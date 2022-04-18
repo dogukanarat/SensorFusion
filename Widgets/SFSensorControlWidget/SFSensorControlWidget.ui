@@ -6,16 +6,29 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>494</width>
+    <height>424</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,3,1,3,1,3,0,4,1">
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="labelAccelerationX">
+     <property name="text">
+      <string>Acceleration X</string>
+     </property>
+    </widget>
+   </item>
    <item>
     <layout class="QHBoxLayout" name="layoutAccelerationX" stretch="10,1">
+     <property name="spacing">
+      <number>10</number>
+     </property>
      <item>
       <widget class="QSlider" name="accelerationX">
        <property name="orientation">
@@ -24,12 +37,29 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="accelerationXState"/>
+      <widget class="QLineEdit" name="accelerationXState">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
    <item>
+    <widget class="QLabel" name="labelAccelerationY">
+     <property name="text">
+      <string>Acceleration Y</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <layout class="QHBoxLayout" name="layoutAccelerationY" stretch="10,1">
+     <property name="spacing">
+      <number>10</number>
+     </property>
      <item>
       <widget class="QSlider" name="accelerationY">
        <property name="orientation">
@@ -38,12 +68,29 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="accelerationYState"/>
+      <widget class="QLineEdit" name="accelerationYState">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
    <item>
+    <widget class="QLabel" name="labelAccelerationZ">
+     <property name="text">
+      <string>Acceleration Z</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <layout class="QHBoxLayout" name="layoutAccelerationZ" stretch="10,1">
+     <property name="spacing">
+      <number>10</number>
+     </property>
      <item>
       <widget class="QSlider" name="accelerationZ">
        <property name="orientation">
@@ -52,16 +99,109 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="accelerationZState"/>
+      <widget class="QLineEdit" name="accelerationZState">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
    <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
     <widget class="QPushButton" name="buttonRun">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
      <property name="text">
       <string>Run</string>
      </property>
     </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="layoutVelocityX">
+       <item>
+        <widget class="QLabel" name="labelVelocityX">
+         <property name="text">
+          <string>Velocity X</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="velocityXState">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="layoutVelocityY">
+       <item>
+        <widget class="QLabel" name="labelVelocityY">
+         <property name="text">
+          <string>Velocity Y</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="velocityYState">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="layoutVelocityZ">
+       <item>
+        <widget class="QLabel" name="labelVelocityZ">
+         <property name="text">
+          <string>Velocity Z</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="velocityZState">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>
