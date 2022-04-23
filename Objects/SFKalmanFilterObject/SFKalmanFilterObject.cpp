@@ -1,11 +1,11 @@
-#include "SFKalmanFilter/SFKalmanFilter.h"
+#include "SFKalmanFilterObject/SFKalmanFilterObject.h"
 #include <Eigen/Dense>
 #include <QDebug>
 #include <iostream>
 
 using Eigen::MatrixXd;
 
-SFKalmanFilter::SFKalmanFilter(QObject* parent)
+SFKalmanFilterObject::SFKalmanFilterObject(QObject* parent)
     : QObject(parent)
 {
     MatrixXd m(2,2);

@@ -1,4 +1,4 @@
-add_subdirectory(SFKalmanFilter)
+add_subdirectory(SFKalmanFilterObject)
 
 install(
     EXPORT SFObjects-config
