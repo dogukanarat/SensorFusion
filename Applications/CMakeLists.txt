@@ -1,4 +1,5 @@
 add_subdirectory(SensorFusion)
+add_subdirectory(KalmanFilter)
 
 install(
     EXPORT SF-config

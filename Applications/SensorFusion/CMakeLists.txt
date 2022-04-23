@@ -30,7 +30,7 @@ target_link_libraries(
         SFCore
         SFSensorControlWidget
         SFBaseWidget
-        SFKalmanFilter
+        SFKalmanFilterObject
 )
 
 install(
