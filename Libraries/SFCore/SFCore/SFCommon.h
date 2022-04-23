@@ -3,19 +3,6 @@
 
 #include <cstdint>
 
-typedef uint8_t UInt8;
-typedef uint16_t UInt16;
-typedef uint32_t UInt32;
-typedef uint64_t UInt64;
-typedef int8_t Int8;
-typedef int16_t Int16;
-typedef int32_t Int32;
-typedef int64_t Int64;
-typedef float Real32;
-typedef double Real64;
-typedef UInt8 Bool;
-typedef UInt32 Size;
-
 #ifndef NULL
 #define NULL 0
 #endif
@@ -43,6 +30,19 @@ typedef UInt32 Size;
 
 namespace SF
 {
+    typedef uint8_t UInt8;
+    typedef uint16_t UInt16;
+    typedef uint32_t UInt32;
+    typedef uint64_t UInt64;
+    typedef int8_t Int8;
+    typedef int16_t Int16;
+    typedef int32_t Int32;
+    typedef int64_t Int64;
+    typedef float Real32;
+    typedef double Real64;
+    typedef UInt8 Bool;
+    typedef UInt32 Size;
+
     typedef void Void;
     typedef Void* VoidPointer;
     typedef const Void* ConstVoidPointer;
@@ -51,5 +51,18 @@ namespace SF
     typedef char Char;
     typedef Char* CharPointer;
 }
+
+    typedef SF::UInt8 SFUInt8;
+    typedef SF::UInt16 SFUInt16;
+    typedef SF::UInt32 SFUInt32;
+    typedef SF::UInt64 SFUInt64;
+    typedef SF::Int8 SFInt8;
+    typedef SF::Int16 SFInt16;
+    typedef SF::Int32 SFInt32;
+    typedef SF::Int64 SFInt64;
+    typedef SF::Real32 SFReal32;
+    typedef SF::Real64 SFReal64;
+    typedef SF::UInt8 SFBool;
+    typedef SF::UInt32 SFSize;
 
 #endif // INCLUDED_SFCOMMON_H
