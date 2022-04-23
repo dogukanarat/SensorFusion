@@ -1,4 +1,5 @@
 add_subdirectory(SFCore)
+add_subdirectory(SFKalmanFilter)
 
 install(
     EXPORT SFLibrary-config
